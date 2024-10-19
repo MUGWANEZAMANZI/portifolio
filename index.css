@@ -55,6 +55,7 @@ header a:hover{
 }
 #footer{
     position: fixed;
+    background-color: #5e13ff;
     
 }
 
@@ -78,7 +79,9 @@ header a:hover{
         display: flex;
         justify-content: center; /* Center navigation */
     }
-    body{font-size: 10px;}
+    body{font-size: 10px;
+        background-color: lightblue;
+    }
     
     /* Style navigation links within a box */
     header a {
@@ -106,6 +109,11 @@ header a:hover{
         /*clip-path: circle(50% at 50% 50%); 
         border-radius: 50%;
         /*image-rendering: high-quality; */ }
+        }
+        #footer{
+            position: fixed;
+            background-color: lightblue;
+            
         }
 }
 
@@ -135,5 +143,10 @@ header a:hover{
             /*clip-path: circle(50% at 50% 50%); 
             border-radius: 50%;
             /*image-rendering: high-quality; */ }
+            }
+            #footer{
+                position: fixed;
+                background-color: lightblue;
+                
             }
         }
