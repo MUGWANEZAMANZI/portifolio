@@ -105,7 +105,7 @@ header a:hover{
     body{background-color: lightblue;font-size: 10px;}
         #games  button { color: #ffffff;background-color: #5e13ff;position:sticky;left: 50%; }
         #games dl dd { position: relative;}
-        #games dl dd button { position: absolute; left:70%;  top:50%;border-radius: 30%;width: auto;height: 15px;border-color: none;}
+        #games dl dd button { position: absolute; left:70%;  top:50%;border-radius: 30%;width: auto;height: auto;border-color: none;}
         #image {
             position: absolute;
             left: 70%;
