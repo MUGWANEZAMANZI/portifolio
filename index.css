@@ -1,15 +1,17 @@
 html,body{
     height: 100%;
     margin: 0;
-    display: flex;
+    display: flex; 
     flex-direction: column;
-    background-color: #7f6d6d;
+    background-color: rgb(166, 183, 43);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 header{ background-color: brown;height: 5%;padding: 5px 0px 5px; }
 header a{
     color: white;
     text-decoration: none;
     font-size: 30px;
+    margin-right: 50px;
 }
 header a:hover{
     background-color: black;
@@ -25,13 +27,20 @@ header a:hover{
     height: 300px;
     position: fixed;
     overflow: hidden;
+   
 }
-#image img{
-    width: 100%;
-    height: auto;
+#image {
+    position: absolute;
+    left: 60%;
+    top : 30%;
+    img{
+    width: 250px;
+    height: 250px;
     object-fit: cover;
-    clip-path: circle(50% at 50% 50%);
-    image-rendering: high-quality;
+    object-position: center;
+    /*clip-path: circle(50% at 50% 50%); 
+    border-radius: 50%;
+    /*image-rendering: high-quality; */ }
 } 
 .content {
     display: none;
@@ -47,6 +56,14 @@ header a:hover{
     position: fixed;
     
 }
-header a{
-    float: right;
+
+#text{
+    width: 60%;
 }
+#resume{
+    padding: 30px;
+}
+
+#games  button { color: #ffffff;background-color: #12ccd3;position:sticky;left: 50%; }
+#games dl dd { position: relative;}
+#games dl dd button { position: absolute; left:55%;  top: 30%;border-radius: 30%;width: 100px;height: 50px;border-color: none;}

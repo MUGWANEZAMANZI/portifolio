@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const divs = document.querySelectorAll(".content");
-    const links = document.querySelectorAll("header a");
+    const links = document.querySelectorAll("header a, span a");
+    //const links = document.querySelectorAll("span a")
 
     function showDiv(id) {
         divs.forEach(div => {
@@ -22,6 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Optionally, show the first division initially
-    showDiv('mugwaneza');
-    showDiv('about');
+    //showDiv('home');
+    //showDiv('about');
 });
