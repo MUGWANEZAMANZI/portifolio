@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const divs = document.querySelectorAll(".content");
     const links = document.querySelectorAll("header a, span a");
     //const links = document.querySelectorAll("span a")
-
     function showDiv(id) {
         divs.forEach(div => {
             if (div.id === id) {
@@ -26,3 +25,4 @@ document.addEventListener("DOMContentLoaded", function() {
     //showDiv('home');
     //showDiv('about');
 });
+
