@@ -6,6 +6,7 @@ html,body{
     background-color: rgb(166, 183, 43);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 header{ background-color: brown;height: 5%;padding: 5px 0px 5px; }
 header a{
     color: white;
@@ -67,3 +68,26 @@ header a:hover{
 #games  button { color: #ffffff;background-color: #12ccd3;position:sticky;left: 50%; }
 #games dl dd { position: relative;}
 #games dl dd button { position: absolute; left:55%;  top: 30%;border-radius: 30%;width: 100px;height: 50px;border-color: none;}
+
+@media screen and (max-width: 480px) {
+    /* Adjust header height and layout for phones */
+    header {
+        background-color: brown;
+        padding: 20px;
+        height: auto; /* Let height adjust based on content */
+        display: flex;
+        justify-content: center; /* Center navigation */
+    }
+    
+    /* Style navigation links within a box */
+    header a {
+        display: block; /* Make each link take up full width */
+        background-color: darkblue; /* Box background color */
+        padding: 10px 20px; /* Padding inside the box */
+        margin: 10px 0; /* Spacing between links */
+        font-size: 20px; /* Adjust font size for mobile */
+        border-radius: 10px; /* Optional: Rounded corners for the box */
+        text-align: center; /* Center text in the box */
+        width: 100%; /* Make the box fill the width of the container */
+    }
+}
