@@ -6,7 +6,7 @@ function App() {
   return (
     <div className='flex md:flex-row flex-col justify-center items-center h-screen'>
       <div className='w-1/2 flex justify-center'>
-       <img src={"manzi.jpg"} alt="logo" className='w-1/2 rounded-full' />
+       <img src={"manzi1.png"} alt="logo" className='w-full object-cover' />
       </div>
       <div className="w-1/2 flex-auto" >
        <p>MUGWANEZA MANZI Audace 
