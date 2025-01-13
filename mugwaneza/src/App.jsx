@@ -7,7 +7,7 @@ import Games from './pages/Games';
 import Contact from './pages/Contact';
 function App() {
 
-  return (
+  return {
     <Router>
       <Layout>
         <Routes>
