@@ -2,37 +2,50 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header>
-      <nav>
-        <ul className="flex space-x-4 bg-red-300 w-full justify-center p-2">
-          <li>
+    <header className='bg-gradient-to-r from-purple-500 to-indigo-500 p-4 shadow-lg'>
+      <nav className='container mx-auto'>
+        <ul className='flex flex-col md:flex-row justify-between md:justify-center space-y-2 md:space-y-0 md:space-x-4'>
+          <li className='mx-2 md:mr-auto'>
             <NavLink 
               to="/" 
-              className={({ isActive }) => isActive ? 'text-blue-500 font-bold' : ''}
+              className='text-white px-4 py-1 rounded-md hover:bg-purple-700 transition duration-300'
+              activeClassName='bg-purple-700'
             >
-              Home
+              MUGWANEZA
             </NavLink>
           </li>
-          <li>
+          <li className='mx-2'>
             <NavLink 
               to="/games" 
-              className={({ isActive }) => isActive ? 'text-blue-500 font-bold' : ''}
+              className='text-white px-4 py-1 rounded-md hover:bg-purple-700 transition duration-300'
+              activeClassName='bg-purple-700'
             >
               Games
             </NavLink>
           </li>
-          <li>
+          <li className='mx-2'>
             <NavLink 
               to="/cyber" 
-              className={({ isActive }) => isActive ? 'text-blue-500 font-bold' : ''}
+              className='text-white px-4 py-1 rounded-md hover:bg-purple-700 transition duration-300'
+              activeClassName='bg-purple-700'
             >
               Cyber
             </NavLink>
           </li>
-          <li>
+          <li className='mx-2'>
+            <NavLink 
+              to="/web" 
+              className='text-white px-4 py-1 rounded-md hover:bg-purple-700 transition duration-300'
+              activeClassName='bg-purple-700'
+            >
+              Web Dev
+            </NavLink>
+          </li>
+          <li className='mx-2'>
             <NavLink 
               to="/contact" 
-              className={({ isActive }) => isActive ? 'text-blue-500 font-bold' : ''}
+              className='text-white px-4 py-1 rounded-md hover:bg-purple-700 transition duration-300'
+              activeClassName='bg-purple-700'
             >
               Contact
             </NavLink>

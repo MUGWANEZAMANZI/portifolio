@@ -1,7 +1,7 @@
 
 const Contact = () => {
   return (
-    <div className="bg-black h-1/2 w-1/2 items-center justify-center mx-auto p-4">
+    <div className="h-1/2 w-1/2 items-center justify-center mx-auto p-4">
     <div className="text-center bg-slate-300 rounded-full h-40 w-40 mx-auto">
       <img src="manzi1.png" alt="logo" className='w-36 object-cover rounded-full' /><br>
       </br>

@@ -8,15 +8,36 @@ const Home = () => {
     <div className="w-1/2 flex-auto" >
      <p>MUGWANEZA MANZI Audace 
       <br/>
-      <small>Game Development</small> | <small>SOC Analyst</small>
+      <small>Game Development</small> | <small>SOC Analyst</small> | <small>Web Devloper</small>
       
       <br/><br/>
       
       <table border={1} className='table-auto border-collapse border border-gray-400 w-full'>
+        <caption>Game development</caption>
         <tr className='border' ><th>Game</th><th>Role</th><th>Link</th></tr>
         <tr className='border'><td>BugsVsBuniies</td><td>Level Designer</td><td className="text-blue-800"><a href='https://nizitowns.itch.io/bugs-vs-bunnies-td'>BugsVsBunnies</a></td></tr>
         <tr className='border'><td>RunesVsRobots</td><td>Lead Game Designer</td><td className="text-blue-800"><a href='https://nizitowns.itch.io/bugs-vs-bunnies-td'>RunesVsRobots</a></td></tr>
         <tr className='border'><td>Lecinse master</td><td>Team Leader/Designer</td><td className="text-blue-800"><a href='https://mugwanezamanzi.itch.io/license-master'>License master</a></td></tr>  
+        </table><br/>
+
+        <table border={1} className='table-auto border-collapse border border-gray-400 w-full'>
+          <caption>Web Developement</caption>
+        <tr className='border' ><th>Project</th><th>Role</th><th>Link</th></tr>
+        <tr className='border'><td>Agakurura Tracker</td><td>Full stack</td><td className="text-blue-800"><a href='https://agakurura-production.up.railway.app/'>Tracking device</a></td></tr>
+        <tr><td>React Class project</td><td>Frontend</td><td><a href="https://github.com/MUGWANEZAMANZI/React.git">Class Project</a></td></tr>
+       
+        </table><br/>
+
+
+
+
+        <table border={1} className='table-auto border-collapse border border-gray-400 w-full'>
+          <caption>Cyber Security</caption>
+        <tr className='border' ><th>Operation</th><th>Role</th><th>Link</th></tr>
+        <tr className='border'><td>Checker</td><td>SOC Analyst</td><td className="text-blue-800"><a href='https://agakurura-production.up.railway.app/'>Tracking device</a></td></tr>
+        <tr><td>Log analyzer</td><td>Network researcher</td><td></td></tr>
+        <tr><td>Net Crafts</td><td>Intro to Cyber</td><td></td></tr>
+       
         </table><br/>
        <div>
           <img src="job.png" className="w-10"/><pre>P1 Games | Trusterlabs</pre> 
