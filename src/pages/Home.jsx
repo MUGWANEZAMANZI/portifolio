@@ -41,7 +41,7 @@ const Home = () => {
                 <td className="p-2 text-blue-800"><a href="https://mugwanezamanzi.itch.io/license-master">License Master</a></td>
               </tr>
               <tr className="border">
-                <td className="p-2">{{"Let's Flarp"}</td>
+                <td className="p-2">{"Let's Flarp"}</td>
                 <td className="p-2">Game developer</td>
                 <td className="p-2 text-blue-800"><a href="https://mugwanezamanzi.itch.io/lets-flarp">{"Let's Flarp"}</a></td>
                 </tr>
