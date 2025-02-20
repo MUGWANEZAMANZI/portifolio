@@ -33,7 +33,7 @@ const Home = () => {
               <tr className="border">
                 <td className="p-2">RunesVsRobots</td>
                 <td className="p-2">Lead Game Designer</td>
-                <td className="p-2 text-blue-800"><a href="https://nizitowns.itch.io/bugs-vs-bunnies-td">RunesVsRobots</a></td>
+                <td className="p-2 text-blue-800"><a href="https://chiferito.itch.io/project-tower">RunesVsRobots</a></td>
               </tr>
               <tr className="border">
                 <td className="p-2">License Master</td>
