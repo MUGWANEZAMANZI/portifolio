@@ -49,6 +49,51 @@ const Home = () => {
           </table>
         </div>
 
+
+
+
+ {/* Cyber Security Table */}
+ <div className="w-full overflow-x-auto my-4">
+          <table className="table-auto border-collapse border border-gray-400 w-full text-sm">
+            <caption className="font-semibold text-lg">Cyber Security</caption>
+            <thead>
+              <tr className="border bg-gray-950">
+                <th className="p-2">Operation</th>
+                <th className="p-2">Role</th>
+                <th className="p-2">Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border">
+                <td className="p-2">Checker</td>
+                <td className="p-2">SOC Analyst</td>
+                <td className="p-2 text-blue-800"><a href="https://github.com/MUGWANEZAMANZI/checker">OperationChecker</a></td>
+              </tr>
+              <tr className="border">
+                <td className="p-2">Remote Control</td>
+                <td className="p-2">Network research</td>
+                <td className="p-2 text-blue-800"><a href="https://github.com/MUGWANEZAMANZI/RemoteControl">RemoteControl</a></td>
+              </tr>
+              <tr className="border">
+                <td className="p-2">Log Analyzer</td>
+                <td className="p-2">Python Fundamentals</td>
+                <td className="p-2 text-blue-800"><a href="https://github.com/MUGWANEZAMANZI/LogAnalyzer">Operation Log analyzer</a></td>
+              </tr>
+              <tr className="border">
+                <td className="p-2">Infro Extractor</td>
+                <td className="p-2">Linux Fundamentals</td>
+                <td className="p-2 text-blue-800"><a href="https://github.com/MUGWANEZAMANZI/info_extractor">Operation Info Extractor</a></td>
+              </tr>
+              
+              <tr className="border">
+                <td className="p-2">Net Crafts</td>
+                <td className="p-2">Intro to Cyber</td>
+                <td className="p-2 text-blue-800"><a href="https://drive.google.com/file/d/1_TKJhM86dhpPV-r4H_AYMcUfBpGrJOD7/view?usp=drive_link">Net Crafts</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         {/* Web Development Table */}
         <div className="w-full overflow-x-auto my-4">
           <table className="table-auto border-collapse border border-gray-400 w-full text-sm">
@@ -75,37 +120,7 @@ const Home = () => {
           </table>
         </div>
 
-        {/* Cyber Security Table */}
-        <div className="w-full overflow-x-auto my-4">
-          <table className="table-auto border-collapse border border-gray-400 w-full text-sm">
-            <caption className="font-semibold text-lg">Cyber Security</caption>
-            <thead>
-              <tr className="border bg-gray-950">
-                <th className="p-2">Operation</th>
-                <th className="p-2">Role</th>
-                <th className="p-2">Link</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="border">
-                <td className="p-2">Checker</td>
-                <td className="p-2">SOC Analyst</td>
-                <td className="p-2 text-blue-800"><a href="https://agakurura-production.up.railway.app/">Tracking Device</a></td>
-              </tr>
-              <tr className="border">
-                <td className="p-2">Log Analyzer</td>
-                <td className="p-2">Network Researcher</td>
-                <td className="p-2"></td>
-              </tr>
-              <tr className="border">
-                <td className="p-2">Net Crafts</td>
-                <td className="p-2">Intro to Cyber</td>
-                <td className="p-2"></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
+       
         {/* Job Section */}
         <div className="flex items-center justify-center my-4">
           <img src="job.png" className="w-10 h-auto" alt="Job" />
