@@ -28,17 +28,30 @@ const gamesData = [
 
 const Games = () => {
   return (
-    <div className="container mx-auto p-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {gamesData.map((game, index) => (
-          <div key={index} className="border rounded-lg overflow-hidden shadow-lg">
-            <img src={game.image} alt={game.title} className="w-full h-48 object-cover" />
-            <div className="p-4">
-              <h2 className="text-2xl font-bold mb-2">{game.title}</h2>
-              <p className="text-gray-700">{game.description}</p>
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-indigo-900 text-white py-10 px-4">
+      <div className="max-w-7xl mx-auto">
+        <h1 className="text-4xl font-bold mb-10 text-center">🎮 My Game Creations</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          {gamesData.map((game, index) => (
+            <div
+              key={index}
+              className="bg-white text-gray-900 rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={game.image}
+                  alt={game.title}
+                  className="object-cover w-full h-full"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
+              </div>
+              <div className="p-4">
+                <h2 className="text-xl font-semibold mb-2">{game.title}</h2>
+                <p className="text-gray-700 text-sm">{game.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

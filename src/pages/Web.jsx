@@ -1,27 +1,46 @@
-const gamesData = [
+const webProjects = [
   {
     title: 'Agakurura',
-    description: 'Agakurua is a tracking device that helps you to track your device',
+    description: 'Agakurura is a tracking device that helps you monitor your belongings in real-time with live updates.',
     url: 'https://agakurura-production.up.railway.app/',
+  },
+  {
+    title: 'Abunzi AI Assistant',
+    description: 'A legal AI system built with Rubix ML and Livewire to support local mediators (Abunzi) in resolving community disputes. It types responses in real-time and stores predictions for legal reference.',
+    url: 'https://abunzi-ai-assistant.vercel.app/', // Replace with actual URL if hosted
   },
 ];
 
 const Web = () => {
   return (
-    <>
-    <div className="container mx-auto p-4"></div>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {gamesData.map((game, index) => (
-      <div key={index} className="border rounded-lg overflow-hidden shadow-lg">
-        <iframe src={game.url} title={game.title} className="w-full h-48" />
-        <div className="p-4">
-        <h2 className="text-2xl font-bold mb-2">{game.title}</h2>
-        <p className="text-gray-700">{game.description}</p>
-        </div>
+    <div className="min-h-screen bg-gray-100 py-10 px-4">
+      <h1 className="text-4xl font-bold text-center text-indigo-600 mb-10">🌐 Web Projects</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        {webProjects.map((project, index) => (
+          <div key={index} className="bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden">
+            <div className="relative">
+              <iframe
+                src={project.url}
+                title={project.title}
+                className="w-full h-64 border-b"
+              />
+            </div>
+            <div className="p-5">
+              <h2 className="text-2xl font-semibold text-indigo-700 mb-2">{project.title}</h2>
+              <p className="text-gray-600 mb-3">{project.description}</p>
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-sm text-indigo-500 hover:underline"
+              >
+                View Live ↗
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
-      ))}
     </div>
-    </>
   );
 };
 

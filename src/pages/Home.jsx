@@ -1,136 +1,109 @@
+
 const Home = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center min-h-screen p-4">
-      {/* Image Section */}
-      <div className="md:w-1/2 w-full flex justify-center p-2">
-        <img src="manzi1.png" alt="logo" className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-cover rounded-lg shadow-md" />
-      </div>
-
-      {/* Info Section */}
-      <div className="md:w-1/2 w-full flex flex-col items-center text-center md:text-left p-4">
-        <h1 className="text-2xl font-bold">MUGWANEZA MANZI Audace</h1>
-        <p className="text-gray-600">
-          <small>Game Development</small> | <small>SOC Analyst</small> | <small>Web Developer</small>
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-950 text-white p-4 flex flex-col">
+      {/* Header Section */}
+      <header className="text-center mb-8">
+        <h1 className="text-4xl font-bold text-green-400 drop-shadow-md">
+          MUGWANEZA MANZI Audace
+        </h1>
+        <p className="mt-2 text-sm text-gray-300 italic">
+          Game Developer | SOC Analyst | Full-stack Web Developer | Mobile Developer | AI Engineer
         </p>
+      </header>
 
-        {/* Game Development Table */}
-        <div className="w-full overflow-x-auto my-4">
-          <table className="table-auto border-collapse border border-gray-400 w-full text-sm">
-            <caption className="font-semibold text-lg">Game Development</caption>
-            <thead>
-              <tr className="border bg-gray-950">
-                <th className="p-2">Game</th>
-                <th className="p-2">Role</th>
-                <th className="p-2">Link</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="border">
-                <td className="p-2">BugsVsBunnies</td>
-                <td className="p-2">Level Designer</td>
-                <td className="p-2 text-blue-800"><a href="https://nizitowns.itch.io/bugs-vs-bunnies-td">BugsVsBunnies</a></td>
-              </tr>
-              <tr className="border">
-                <td className="p-2">RunesVsRobots</td>
-                <td className="p-2">Lead Game Designer</td>
-                <td className="p-2 text-blue-800"><a href="https://chiferito.itch.io/project-tower">RunesVsRobots</a></td>
-              </tr>
-              <tr className="border">
-                <td className="p-2">License Master</td>
-                <td className="p-2">Team Leader/Designer</td>
-                <td className="p-2 text-blue-800"><a href="https://mugwanezamanzi.itch.io/license-master">License Master</a></td>
-              </tr>
-              <tr className="border">
-                <td className="p-2">{"Let's Flarp"}</td>
-                <td className="p-2">Game developer</td>
-                <td className="p-2 text-blue-800"><a href="https://mugwanezamanzi.itch.io/lets-flarp">{"Let's Flarp"}</a></td>
-                </tr>
-            </tbody>
-          </table>
+      {/* Main Section */}
+      <div className="flex flex-col md:flex-row gap-8">
+        {/* Profile Image */}
+        <div className="md:w-1/3 flex flex-col items-center">
+  <img
+    src="manzi1.png"
+    alt="logo"
+    className="rounded-3xl shadow-2xl w-72 h-72 object-cover border-4 border-green-500"
+  />
+  <div className="mt-4 text-center space-y-1">
+    <p className="text-sm text-green-300">📧 mmaudace@gmail.com</p>
+    <p className="text-sm text-green-300">📞 +250 787 652 137</p>
+  </div>
+</div>
+
+
+        {/* Projects & Skills */}
+        <div className="md:w-2/3 flex flex-col gap-6 max-h-[75vh] overflow-y-auto scrollbar-thin scrollbar-thumb-green-500 scrollbar-track-slate-700 p-2">
+          {/* Reusable Table Component */}
+          {[{
+            title: "Game Development",
+            data: [
+              ["BugsVsBunnies", "Level Designer", "https://nizitowns.itch.io/bugs-vs-bunnies-td"],
+              ["RunesVsRobots", "Lead Game Designer", "https://chiferito.itch.io/project-tower"],
+              ["License Master", "Team Leader/Designer", "https://mugwanezamanzi.itch.io/license-master"],
+              ["Let's Flarp", "Game Developer", "https://mugwanezamanzi.itch.io/lets-flarp"]
+            ]
+          }, {
+            title: "Cyber Security",
+            data: [
+              ["Checker", "SOC Analyst", "https://github.com/MUGWANEZAMANZI/checker"],
+              ["Remote Control", "Network Research", "https://github.com/MUGWANEZAMANZI/RemoteControl"],
+              ["Log Analyzer", "Python Fundamentals", "https://github.com/MUGWANEZAMANZI/LogAnalyzer"],
+              ["Info Extractor", "Linux Fundamentals", "https://github.com/MUGWANEZAMANZI/info_extractor"],
+              ["Net Crafts", "Intro to Cyber", "https://drive.google.com/file/d/1_TKJhM86dhpPV-r4H_AYMcUfBpGrJOD7/view?usp=drive_link"]
+            ]
+          }, {
+            title: "Web Development",
+            data: [
+              ["Agakurura Tracker", "Full Stack", "https://agakurura-production.up.railway.app/"],
+              ["React Class Project", "Frontend", "https://github.com/MUGWANEZAMANZI/React.git"]
+            ]
+          }, {
+            title: "AI & Machine Learning (Rubix PHP)",
+            data: [
+              ["Legal AI Assistant", "Laravel + Rubix PHP", "https://github.com/MUGWANEZAMANZI"]
+            ]
+          }, {
+            title: "Mobile Development (Expo & Android Studio)",
+            data: [
+              ["Android Studio Projects", "Java/Kotlin", "https://github.com/MUGWANEZAMANZI"],
+              ["Expo React Native App", "Frontend Mobile", "https://github.com/MUGWANEZAMANZI"]
+            ]
+          }].map((section, index) => (
+            <div key={index} className="bg-slate-800 p-4 rounded-xl shadow-md">
+              <h2 className="text-green-300 text-lg font-semibold border-b border-green-500 mb-2 pb-1">
+                {section.title}
+              </h2>
+              <table className="w-full text-sm text-left">
+                <thead>
+                  <tr className="text-green-500">
+                    <th className="p-2">Project</th>
+                    <th className="p-2">Role</th>
+                    <th className="p-2">Link</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {section.data.map((row, i) => (
+                    <tr key={i} className="border-b border-slate-600 hover:bg-slate-700">
+                      <td className="p-2 text-white">{row[0]}</td>
+                      <td className="p-2 text-gray-300">{row[1]}</td>
+                      <td className="p-2 text-blue-400 underline">
+                        <a href={row[2]} target="_blank" rel="noopener noreferrer">{row[0]}</a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ))}
+
+          {/* Jobs Section */}
+          <div className="mt-6 p-4 bg-slate-700 rounded-xl text-center">
+            <h3 className="text-md font-bold text-green-300">Employment</h3>
+            <p className="text-sm text-gray-200">P1 Games | Trusterlabs</p>
+          </div>
+
+          {/* Notice */}
+          <p className="bg-yellow-500 text-black p-3 text-center rounded-md shadow-lg">
+            🚧 This portfolio is under active maintenance. Stay tuned!
+          </p>
         </div>
-
-
-
-
- {/* Cyber Security Table */}
- <div className="w-full overflow-x-auto my-4">
-          <table className="table-auto border-collapse border border-gray-400 w-full text-sm">
-            <caption className="font-semibold text-lg">Cyber Security</caption>
-            <thead>
-              <tr className="border bg-gray-950">
-                <th className="p-2">Operation</th>
-                <th className="p-2">Role</th>
-                <th className="p-2">Link</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="border">
-                <td className="p-2">Checker</td>
-                <td className="p-2">SOC Analyst</td>
-                <td className="p-2 text-blue-800"><a href="https://github.com/MUGWANEZAMANZI/checker">OperationChecker</a></td>
-              </tr>
-              <tr className="border">
-                <td className="p-2">Remote Control</td>
-                <td className="p-2">Network research</td>
-                <td className="p-2 text-blue-800"><a href="https://github.com/MUGWANEZAMANZI/RemoteControl">RemoteControl</a></td>
-              </tr>
-              <tr className="border">
-                <td className="p-2">Log Analyzer</td>
-                <td className="p-2">Python Fundamentals</td>
-                <td className="p-2 text-blue-800"><a href="https://github.com/MUGWANEZAMANZI/LogAnalyzer">Operation Log analyzer</a></td>
-              </tr>
-              <tr className="border">
-                <td className="p-2">Infro Extractor</td>
-                <td className="p-2">Linux Fundamentals</td>
-                <td className="p-2 text-blue-800"><a href="https://github.com/MUGWANEZAMANZI/info_extractor">Operation Info Extractor</a></td>
-              </tr>
-              
-              <tr className="border">
-                <td className="p-2">Net Crafts</td>
-                <td className="p-2">Intro to Cyber</td>
-                <td className="p-2 text-blue-800"><a href="https://drive.google.com/file/d/1_TKJhM86dhpPV-r4H_AYMcUfBpGrJOD7/view?usp=drive_link">Net Crafts</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        {/* Web Development Table */}
-        <div className="w-full overflow-x-auto my-4">
-          <table className="table-auto border-collapse border border-gray-400 w-full text-sm">
-            <caption className="font-semibold text-lg">Web Development</caption>
-            <thead>
-              <tr className="border bg-gray-950">
-                <th className="p-2">Project</th>
-                <th className="p-2">Role</th>
-                <th className="p-2">Link</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="border">
-                <td className="p-2">Agakurura Tracker</td>
-                <td className="p-2">Full Stack</td>
-                <td className="p-2 text-blue-800"><a href="https://agakurura-production.up.railway.app/">Tracking Device</a></td>
-              </tr>
-              <tr className="border">
-                <td className="p-2">React Class Project</td>
-                <td className="p-2">Frontend</td>
-                <td className="p-2 text-blue-800"><a href="https://github.com/MUGWANEZAMANZI/React.git">Class Project</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-       
-        {/* Job Section */}
-        <div className="flex items-center justify-center my-4">
-          <img src="job.png" className="w-10 h-auto" alt="Job" />
-          <pre className="ml-2 text-gray-700">P1 Games | Trusterlabs</pre>
-        </div>
-
-        {/* Maintenance Notice */}
-        <p className="my-6 p-4 border bg-slate-500 text-white rounded-md shadow-md text-center">
-          Website under maintenance
-        </p>
       </div>
     </div>
   );
