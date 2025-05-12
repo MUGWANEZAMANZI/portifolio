@@ -9,7 +9,7 @@ const gamesData = [
     title: 'RunesVsRobots',
     description: 'This is a wonderful tower defense game (Sci-Fi)...',
     image: 'https://img.itch.zone/aW1nLzE4ODEzMTUxLnBuZw==/original/60PkJS.png',
-    trailer: 'https://www.youtube.com/embed/xtQojBZCvm4',
+    trailer: 'https://www.youtube.com/embed/Y4VPANNZZBA',
   },
   {
     title: 'License Master',
@@ -31,9 +31,9 @@ const gamesData = [
   },
   {
     title: 'Ikinyoni Flarping Bird',
-    description: 'A chaotic flight of the bird through dangerous pipes!',
+    description: 'Flary Bird follows Ikinyoni, a bold and adventurous bird navigating the vast landscapes of Mars. Players must flarp through the Martian skies while answering questions that challenge their knowledge of life in space.',
     image: 'https://img.itch.zone/aW1hZ2UvMzMzMzE3Ny8yMDQ1OTk5MC5wbmc=/original/fF%2FHCG.png', // Optional image or placeholder
-    trailer: 'https://youtu.be/9su6s9R5PWY',
+    trailer: 'https://www.youtube.com/embed/9su6s9R5PWY',
   },
   {
     title: 'The Chase – Animation Showcase',
