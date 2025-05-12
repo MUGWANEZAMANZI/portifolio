@@ -1,34 +1,52 @@
 const gamesData = [
   {
     title: 'BugsVsBunnies',
-    description: 'Bugs Vs Bunnies is an engaging tower defense game where players must protect their crops from waves of invading bugs. Strategically place defensive towers to fend off these pests and ensure your harvest remains untouched.',
+    description: 'Bugs Vs Bunnies is an engaging tower defense game...',
     image: 'https://img.itch.zone/aW1hZ2UvMjgzNDQ3NS8xNzIxNTE4Mi5qcGc=/original/6rl8uh.jpg',
+    trailer: 'https://www.youtube.com/embed/BpwBTb_BDgY',
   },
   {
     title: 'RunesVsRobots',
-    description: 'This is a wonderful tower defense game (Sci-Fi). Defend two maps, set up your defenses, defeat your enemies.',
+    description: 'This is a wonderful tower defense game (Sci-Fi)...',
     image: 'https://img.itch.zone/aW1nLzE4ODEzMTUxLnBuZw==/original/60PkJS.png',
+    trailer: 'https://www.youtube.com/embed/xtQojBZCvm4',
   },
   {
     title: 'License Master',
-    description: 'License Master is an educational driving simulation game created by Team Pulse of The Blue Square Legion. The game is designed to replicate traffic exams, challenging players to earn licenses by mastering the rules of the road.',
-    image: 'https://img.itch.zone/aW1hZ2UvMzE5MTc4NS8xOTM2NjEzMy5qcGc=/original/rHtnvg.jpg', // Replace with actual image URL
+    description: 'An educational driving simulation game...',
+    image: 'https://img.itch.zone/aW1hZ2UvMzE5MTc4NS8xOTM2NjEzMy5qcGc=/original/rHtnvg.jpg',
+    trailer: 'https://www.youtube.com/embed/fIKVIjys9qY',
   },
   {
     title: 'Torpedo',
-    description: 'In the undiscovered sea you aim wasting all ships trying to cross your region.No one shall survive.',
-    image: 'https://img.itch.zone/aW1hZ2UvMjgzNDk0Ny8xNjkzNzM5OS5qcGc=/original/63ZG5t.jpg'
+    description: 'In the undiscovered sea you aim to sink all ships...',
+    image: 'https://img.itch.zone/aW1hZ2UvMjgzNDk0Ny8xNjkzNzM5OS5qcGc=/original/63ZG5t.jpg',
+    trailer: null, // No trailer
   },
   {
     title: 'Bake',
     description: 'Bake your cuisine and lounge',
     image: 'https://img.itch.zone/aW1hZ2UvMjgyMTkwOS8xNjg1NzQ4MC5wbmc=/original/FU72D2.png',
-  }
+    trailer: null, // No trailer
+  },
+  {
+    title: 'Ikinyoni Flarping Bird',
+    description: 'A chaotic flight of the bird through dangerous pipes!',
+    image: 'https://img.itch.zone/aW1hZ2UvMzMzMzE3Ny8yMDQ1OTk5MC5wbmc=/original/fF%2FHCG.png', // Optional image or placeholder
+    trailer: 'https://youtu.be/9su6s9R5PWY',
+  },
+  {
+    title: 'The Chase – Animation Showcase',
+    description: 'A movie made with Unity — combining animation, storytelling, and game dev art.',
+    image: 'https://i.ytimg.com/vi/xPTxwFbbbX4/maxresdefault.jpg',
+    trailer: 'https://www.youtube.com/embed/xPTxwFbbbX4',
+  },
 ];
+
 
 const Games = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-indigo-900 text-white py-10 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-950 text-white py-10 px-4">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold mb-10 text-center">🎮 My Game Creations</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -47,7 +65,23 @@ const Games = () => {
               </div>
               <div className="p-4">
                 <h2 className="text-xl font-semibold mb-2">{game.title}</h2>
-                <p className="text-gray-700 text-sm">{game.description}</p>
+                <p className="text-gray-700 text-sm mb-2">{game.description}</p>
+                {game.trailer ? (
+                  <div className="aspect-video mb-2">
+                    <iframe
+                      className="w-full h-full rounded-xl"
+                      src={game.trailer}
+                      title={game.title}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                ) : (
+                  <div className="aspect-video bg-gray-200 flex items-center justify-center text-sm text-gray-600 rounded-xl mb-2">
+                    🎬 Trailer Coming Soon
+                  </div>
+                )}
               </div>
             </div>
           ))}
@@ -56,5 +90,6 @@ const Games = () => {
     </div>
   );
 };
+
 
 export default Games;

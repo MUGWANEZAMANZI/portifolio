@@ -1,9 +1,9 @@
 const Contact = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-900 via-purple-900 to-violet-700 text-white p-6">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br  from-gray-900 via-slate-800 to-gray-950 text-white p-6">
       {/* Profile Image */}
-      <div className="rounded-full shadow-lg overflow-hidden w-40 h-40 border-4 border-white mb-6 transform hover:scale-105 transition">
-        <img src="manzi1.png" alt="Manzi Audace" className="object-cover w-full h-full" />
+      <div className="rounded-full shadow-lg overflow-hidden w-80 h-80 border-4 border-white mb-6 transform hover:scale-105 transition">
+        <img src="mugwaneza.jpg" alt="Manzi Audace" className="object-cover w-full h-full" />
       </div>
 
       {/* Info */}

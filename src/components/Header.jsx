@@ -24,7 +24,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   `px-4 py-1 rounded-full text-white font-medium transition-all duration-300 ${
                     isActive
-                      ? 'bg-white text-indigo-800 shadow-md'
+                      ? 'bg-black text-indigo-800 shadow-md'
                       : 'hover:bg-white/10 hover:scale-105'
                   }`
                 }

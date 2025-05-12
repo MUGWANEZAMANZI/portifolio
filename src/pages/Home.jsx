@@ -17,9 +17,9 @@ const Home = () => {
         {/* Profile Image */}
         <div className="md:w-1/3 flex flex-col items-center">
   <img
-    src="manzi1.png"
-    alt="logo"
-    className="rounded-3xl shadow-2xl w-72 h-72 object-cover border-4 border-green-500"
+    src="mugwaneza.jpg"
+    alt="MUGWANEZA Profile"
+    className="rounded-3xl shadow-2xl w-72 h-72 object-fit border-4 border-green-500"
   />
   <div className="mt-4 text-center space-y-1">
     <p className="text-sm text-green-300">📧 mmaudace@gmail.com</p>

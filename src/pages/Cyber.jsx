@@ -38,7 +38,7 @@ function Cyber() {
     ];
 
     return (
-        <div className="min-h-screen bg-gray-900 text-white p-8">
+        <div className="min-h-screen from-gray-900 via-slate-800 to-gray-950 p-8">
           <h1 className="text-4xl font-bold text-center mb-12 text-cyan-400">🛡️ Cybersecurity Certifications</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {certifications.map((cert, index) => (

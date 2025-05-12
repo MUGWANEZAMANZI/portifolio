@@ -13,7 +13,7 @@ const webProjects = [
 
 const Web = () => {
   return (
-    <div className="min-h-screen bg-gray-100 py-10 px-4">
+    <div className="min-h-screen  from-gray-900 via-slate-800 to-gray-950 py-10 px-4">
       <h1 className="text-4xl font-bold text-center text-indigo-600 mb-10">🌐 Web Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {webProjects.map((project, index) => (
