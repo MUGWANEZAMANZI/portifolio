@@ -37,7 +37,9 @@ const Home = () => {
               ["BugsVsBunnies", "Level Designer", "https://nizitowns.itch.io/bugs-vs-bunnies-td"],
               ["RunesVsRobots", "Lead Game Designer", "https://chiferito.itch.io/project-tower"],
               ["License Master", "Team Leader/Designer", "https://mugwanezamanzi.itch.io/license-master"],
-              ["Let's Flarp", "Game Developer", "https://mugwanezamanzi.itch.io/lets-flarp"]
+              // ["Let's Flarp", "Game Developer", "https://mugwanezamanzi.itch.io/lets-flarp"],
+              ['Ikinyoni Bird', "Game Developer", "https://mugwanezamanzi.itch.io/ikinyoni-bird"],
+
             ]
           }, {
             title: "Cyber Security",
