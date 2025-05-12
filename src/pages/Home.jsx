@@ -1,5 +1,15 @@
-
+import { useState } from "react";
 const Home = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [title, setTitle] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSend = () => {
+    const subject = encodeURIComponent(title);
+    const body = encodeURIComponent(message);
+    window.location.href = `mailto:mmaudace@gmail.com?subject=${subject}&body=${body}`;
+    setIsModalOpen(false);
+  };
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-950 text-white p-4 flex flex-col">
       {/* Header Section */}
@@ -24,6 +34,50 @@ const Home = () => {
   <div className="mt-4 text-center space-y-1">
     <p className="text-sm text-green-300">📧 mmaudace@gmail.com</p>
     <p className="text-sm text-green-300">📞 +250 787 652 137</p>
+    {/* Hire Me Button */}
+      <button
+        onClick={() => setIsModalOpen(true)}
+        className="mt-4 px-6 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl shadow"
+      >
+        Hire Me
+      </button>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+          <div className="bg-white rounded-xl p-6 w-full max-w-md">
+            <h2 className="text-xl font-semibold mb-4">Send Me a Message</h2>
+            <input
+              type="text"
+              placeholder="Title"
+              className="w-full border px-4 py-2 rounded mb-3 text-black"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
+            <textarea
+              placeholder="Message"
+              className="w-full border px-4 py-2 rounded mb-3 text-black"
+              rows="4"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
+            <div className="flex justify-end gap-2">
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleSend}
+                className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
   </div>
 </div>
 
