@@ -18,6 +18,13 @@ const gamesData = [
     trailer: 'https://www.youtube.com/embed/fIKVIjys9qY',
   },
   {
+    title: 'NanoCore',
+    description: 'Tower defence game. Place towers during the build phase, spend Bytes to upgrade them during the attack phase, and defend the CPU from viruses!',
+    image: 'https://img.itch.zone/aW1hZ2UvMzU3NTM4MS8yMTM0NDQ5MC5wbmc=/794x1000/qIlPrM.png',
+    trailer: null,
+
+  },
+  {
     title: 'Torpedo',
     description: 'In the undiscovered sea you aim to sink all ships...',
     image: 'https://img.itch.zone/aW1hZ2UvMjgzNDk0Ny8xNjkzNzM5OS5qcGc=/original/63ZG5t.jpg',
