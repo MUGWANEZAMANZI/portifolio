@@ -89,7 +89,7 @@ const Home = () => {
 
           <div className="w-full mt-6 p-4 bg-slate-700 rounded-xl text-center">
             <h3 className="text-md font-bold text-green-300">Employment</h3>
-            <p className=" pr-6 pl-6 text-sm text-gray-200">P1 Games | Trusterlabs</p>
+            <p className=" pr-6 pl-6 text-sm text-gray-200">Kigali Web Artisans</p>
           </div>
           </div>
         </div>
