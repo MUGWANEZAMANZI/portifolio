@@ -89,7 +89,7 @@ const Home = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-cyan-600 to-pink-600 rounded-lg blur opacity-25 animate-pulse"></div>
           </div>
           <p className="mt-6 text-lg md:text-xl text-gray-300 font-light tracking-wide">
-            🎮 Game Developer | 🛡️ SOC Analyst | 🌐 Full-stack Developer | 📱 Mobile Developer | 🤖 AI Engineer
+            Software Engineer
           </p>
         </header>
 
@@ -238,7 +238,7 @@ const Home = () => {
         </div>
       )}
 
-      <style jsx>{`
+      <style>{`
         @keyframes fade-in {
           from { opacity: 0; transform: translateY(20px); }
           to { opacity: 1; transform: translateY(0); }
