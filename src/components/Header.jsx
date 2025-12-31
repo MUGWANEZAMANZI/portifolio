@@ -8,8 +8,8 @@ const Header = () => {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/games', label: 'Games' },
-    { path: '/cyber', label: 'Cyber' },
-    { path: '/web', label: 'Web Dev' },
+    { path: '/certifications', label: 'Certifications' },
+    { path: '/web', label: 'Web' },
     { path: '/contact', label: 'Contact' },
   ];
 
@@ -32,9 +32,8 @@ const Header = () => {
 
         {/* Navigation Links (mobile & desktop) */}
         <ul
-          className={`fixed md:static top-0 left-0 w-full h-screen md:h-auto bg-indigo-950 md:bg-transparent flex flex-col md:flex-row gap-4 md:gap-6 items-center justify-center md:justify-end p-8 md:p-0 transition-all duration-300 z-40 ${
-            isOpen ? "flex" : "hidden md:flex"
-          }`}
+          className={`fixed md:static top-0 left-0 w-full h-screen md:h-auto bg-indigo-950 md:bg-transparent flex flex-col md:flex-row gap-4 md:gap-6 items-center justify-center md:justify-end p-8 md:p-0 transition-all duration-300 z-40 ${isOpen ? "flex" : "hidden md:flex"
+            }`}
         >
           {navItems.map(({ path, label }) => (
             <li key={path}>
@@ -42,10 +41,9 @@ const Header = () => {
                 to={path}
                 onClick={() => setIsOpen(false)} // Close menu on link click
                 className={({ isActive }) =>
-                  `block px-4 py-2 rounded-full text-white font-medium transition-all duration-300 ${
-                    isActive
-                      ? "bg-black text-indigo-300 shadow-md"
-                      : "hover:bg-white/10 hover:scale-105"
+                  `block px-4 py-2 rounded-full text-white font-medium transition-all duration-300 ${isActive
+                    ? "bg-black text-indigo-300 shadow-md"
+                    : "hover:bg-white/10 hover:scale-105"
                   }`
                 }
               >

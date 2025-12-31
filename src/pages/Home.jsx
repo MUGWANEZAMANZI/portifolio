@@ -12,186 +12,191 @@ const Home = () => {
     setIsModalOpen(false);
   };
 
-  const sections = [
+  const interests = [
+    "Computer Vision",
+    "Machine Learning",
+    "Quantum Computing",
+  ];
+
+  const highlights = [
     {
-      title: "🎮 Game Development",
-      color: "from-purple-600 to-pink-600",
-      borderColor: "border-purple-400",
-      data: [
-        ["BugsVsBunnies", "Level Designer", "https://nizitowns.itch.io/bugs-vs-bunnies-td"],
-        ["RunesVsRobots", "Lead Game Designer", "https://chiferito.itch.io/project-tower"],
-        ["License Master", "Team Leader/Designer", "https://mugwanezamanzi.itch.io/license-master"],
-        ["NanoCore", "Team Leader/Game Designer", "https://xamsav.itch.io/nanocore-defense-protocol"],
-        ["Ikinyoni Bird", "Game Developer", "https://mugwanezamanzi.itch.io/ikinyoni-bird"]
-      ]
+      kind: "Paper",
+      title: "Coming Soon — Vision research manuscript",
+      meta: "2025",
+      linkText: "Google Scholar",
+      url: "https://scholar.google.com/"
     },
     {
-      title: "🛡️ Cyber Security",
-      color: "from-red-600 to-orange-600",
-      borderColor: "border-red-400",
-      data: [
-        ["Checker", "SOC Analyst", "https://github.com/MUGWANEZAMANZI/checker"],
-        ["Remote Control", "Network Research", "https://github.com/MUGWANEZAMANZI/RemoteControl"],
-        ["Log Analyzer", "Python Fundamentals", "https://github.com/MUGWANEZAMANZI/LogAnalyzer"],
-        ["Info Extractor", "Linux Fundamentals", "https://github.com/MUGWANEZAMANZI/info_extractor"],
-        ["Net Crafts", "Intro to Cyber", "https://drive.google.com/file/d/1_TKJhM86dhpPV-r4H_AYMcUfBpGrJOD7/view?usp=drive_link"],
-        ["Kagoma Sanitizer", "Trusterlabs", ""]
-      ]
+      kind: "Project",
+      title: "Mbaza AI — Legal assistant (AI)",
+      meta: "Applied AI",
+      linkText: "Code",
+      url: "https://github.com/MUGWANEZAMANZI"
     },
     {
-      title: "🌐 Web Development",
-      color: "from-blue-600 to-cyan-600",
-      borderColor: "border-blue-400",
-      data: [
-        ["Abunzi - Digitizing Local Dispute Resolution", "Full Stack", ""],
-        ["Agakurura Tracker", "Full Stack", "https://agakurura-production.up.railway.app/"],
-        ["React Class Project", "Frontend", "https://github.com/MUGWANEZAMANZI/React.git"]
-      ]
-    },
-    {
-      title: "🤖 AI & Machine Learning",
-      color: "from-emerald-600 to-teal-600",
-      borderColor: "border-emerald-400",
-      data: [["Mbaza AI", "Laravel + Rubix PHP", "https://github.com/MUGWANEZAMANZI"]]
-    },
-    {
-      title: "📱 Mobile Development",
-      color: "from-indigo-600 to-purple-600",
-      borderColor: "border-indigo-400",
-      data: [
-        ["Mbaza AI", "AI Assistant built using Rwandan dataset of laws", "https://play.google.com/apps/internaltest/4701693262390775478"],
-        ["Dorm Link", "Android app for students to find cheap dorms and hostels in Rwanda on Maps", "https://play.google.com/apps/internaltest/4700453856788841191"],
-        ["Nutri tracker", "React Native + Laravel", "https://github.com/MUGWANEZAMANZI"],
-        ["Android Studio Projects", "Java/Kotlin", "https://github.com/MUGWANEZAMANZI"],
-        ["Expo React Native App", "Frontend Mobile", "https://github.com/MUGWANEZAMANZI"],
-        ["Systeme de Permis de conduire", "Android Studio", "https://github.com/MUGWANEZAMANZI"]
-      ]
+      kind: "Dataset",
+      title: "Coming Soon — CV dataset",
+      meta: "Open data",
+      linkText: "Overview",
+      url: "#"
     }
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-black text-white overflow-x-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-900/20 via-blue-900/20 to-emerald-900/20 animate-pulse"></div>
-      
-      {/* Floating Orbs */}
-      <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-pink-500 to-violet-500 rounded-full opacity-20 animate-bounce"></div>
-      <div className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full opacity-20 animate-bounce delay-1000"></div>
-      <div className="absolute bottom-20 left-1/4 w-20 h-20 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full opacity-20 animate-bounce delay-2000"></div>
+      {/* Subtle backdrop for a cleaner research aesthetic */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-black"></div>
 
       <div className="relative z-10 p-4 lg:p-8">
-        {/* Header */}
-        <header className="text-center mb-12 px-4 animate-fade-in">
-          <div className="relative inline-block">
-            <h1 className="text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
-              MUGWANEZA MANZI Audace
-            </h1>
-            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-600 to-pink-600 rounded-lg blur opacity-25 animate-pulse"></div>
-          </div>
-          <p className="mt-6 text-lg md:text-xl text-gray-300 font-light tracking-wide">
-            Software Engineer
+        {/* Hero */}
+        <header className="text-center mb-10 px-4 animate-fade-in">
+          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-white">
+            MUGWANEZA MANZI Audace
+          </h1>
+          <p className="mt-4 text-lg md:text-xl text-gray-300 font-medium">
+            Computer Vision & Machine Learning Researcher
           </p>
+          <p className="mt-2 text-sm md:text-base text-gray-400">
+            Kigali, Rwanda • Research at Kigali Web Artisans
+          </p>
+
+          <div className="mt-6 flex flex-wrap gap-2 justify-center">
+            {interests.map((tag, i) => (
+              <span
+                key={i}
+                className="px-3 py-1 rounded-full bg-white/5 text-gray-200 border border-white/10 text-xs md:text-sm"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="https://orcid.org/0009-0003-0610-2382"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-3 rounded-xl bg-white text-slate-900 font-semibold shadow hover:shadow-lg"
+            >
+              View Publications (ORCID)
+            </a>
+            <a
+              href="cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-3 rounded-xl border border-white/20 text-white hover:bg-white/10"
+            >
+              Download CV
+            </a>
+            <a
+              href="mailto:mmaudace@gmail.com"
+              className="px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold"
+            >
+              Contact
+            </a>
+          </div>
         </header>
 
         {/* Main Section */}
         <div className="flex flex-col xl:flex-row gap-12 max-w-7xl mx-auto">
           {/* Profile Card */}
           <div className="xl:w-1/3 flex flex-col items-center">
-            <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
-              <img
-                src="mugwaneza.jpg"
-                alt="MUGWANEZA Profile"
-                className="relative w-80 h-80 object-cover rounded-full border-8 border-white/20 shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            
-            <div className="mt-8 text-center space-y-6 bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-3xl p-8 border border-white/10 shadow-2xl">
-              <div className="space-y-4">
-                <div className="flex items-center justify-center space-x-2 text-cyan-300 hover:text-cyan-200 transition-colors">
-                  <span className="text-2xl">📧</span>
+            <img
+              src="mugwaneza.jpg"
+              alt="MUGWANEZA Profile"
+              className="w-64 h-64 object-cover rounded-full border-8 border-white/10 shadow-xl"
+            />
+
+            <div className="mt-8 text-center space-y-6 bg-slate-900/60 backdrop-blur rounded-3xl p-8 border border-white/10 shadow">
+              <div className="space-y-3">
+                <div className="flex items-center justify-center gap-2 text-gray-200">
+                  <span className="text-xl">📧</span>
                   <p className="text-sm md:text-base">mmaudace@gmail.com</p>
                 </div>
-                <div className="flex items-center justify-center space-x-2 text-emerald-300 hover:text-emerald-200 transition-colors">
-                  <span className="text-2xl">📞</span>
+                <div className="flex items-center justify-center gap-2 text-gray-200">
+                  <span className="text-xl">📞</span>
                   <p className="text-sm md:text-base">+250 787 652 137</p>
                 </div>
               </div>
-              
+
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="relative px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-2xl shadow-lg hover:shadow-purple-500/50 transform hover:scale-105 transition-all duration-300 group overflow-hidden"
+                className="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-semibold"
               >
-                <span className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                <span className="relative flex items-center space-x-2">
-                  <span>💼</span>
-                  <span>Hire Me</span>
-                </span>
+                Email Me
               </button>
 
-              <div className="bg-gradient-to-br from-emerald-800/30 to-teal-800/30 rounded-2xl p-6 border border-emerald-400/30">
-                <h3 className="text-xl font-bold text-emerald-300 mb-2 flex items-center justify-center space-x-2">
-                  <span>🏢</span>
-                  <span>Employment</span>
-                </h3>
-                <p className="text-gray-200 font-medium">Kigali Web Artisans</p>
+              <div className="rounded-2xl p-4 border border-white/10">
+                <h3 className="text-lg font-bold text-white mb-1">Affiliation</h3>
+                <p className="text-gray-300">Kigali Web Artisans | University of Rwanda</p>
               </div>
             </div>
           </div>
 
-          {/* Projects Grid */}
-          <div className="xl:w-2/3 space-y-8">
-            {sections.map((section, i) => (
-              <div 
-                key={i} 
-                className="group animate-slide-up"
-                style={{ animationDelay: `${i * 200}ms` }}
-              >
-                <div className={`bg-gradient-to-br ${section.color} p-1 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-[1.02]`}>
-                  <div className="bg-slate-900/90 backdrop-blur-sm rounded-3xl p-6">
-                    <h2 className={`text-2xl font-bold text-white mb-6 pb-3 border-b-2 ${section.borderColor} flex items-center space-x-3`}>
-                      <span>{section.title}</span>
-                    </h2>
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-                      {section.data.map(([name, role, url], j) => (
-                        <div 
-                          key={j} 
-                          className="group/card bg-gradient-to-br from-slate-800/70 to-slate-900/70 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-white/30 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+          {/* Highlights + Archive */}
+          <div className="xl:w-2/3 space-y-10">
+            <div className="animate-slide-up">
+              <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-6">
+                <h2 className="text-2xl font-bold text-white mb-4">Selected Highlights</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                  {highlights.map((h, idx) => (
+                    <div key={idx} className="rounded-2xl border border-white/10 bg-slate-800/60 p-5">
+                      <p className="text-xs text-gray-400 mb-1">{h.kind}</p>
+                      <h3 className="text-base font-semibold text-white">{h.title}</h3>
+                      <p className="text-xs text-gray-500 mt-1">{h.meta}</p>
+                      <div className="mt-3">
+                        <a
+                          href={h.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-indigo-400 hover:text-indigo-300 text-sm"
                         >
-                          <div className="space-y-3">
-                            <h3 className="text-lg font-bold text-white group-hover/card:text-cyan-300 transition-colors duration-300">
-                              {name}
-                            </h3>
-                            <p className="text-sm text-gray-400 bg-slate-800/50 px-3 py-1 rounded-full inline-block">
-                              {role}
-                            </p>
-                            <div className="pt-2">
-                              {url ? (
-                                <a
-                                  href={url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="inline-flex items-center space-x-2 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors duration-300 hover:underline"
-                                >
-                                  <span>🔗</span>
-                                  <span>View Project</span>
-                                </a>
-                              ) : (
-                                <span className="inline-flex items-center space-x-2 text-amber-400 text-sm italic">
-                                  <span>⏳</span>
-                                  <span>Coming Soon</span>
-                                </span>
-                              )}
-                            </div>
-                          </div>
-                        </div>
-                      ))}
+                          {h.linkText} ↗
+                        </a>
+                      </div>
                     </div>
-                  </div>
+                  ))}
                 </div>
               </div>
-            ))}
+            </div>
+
+            <div className="animate-slide-up">
+              <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-6">
+                <h2 className="text-xl font-bold text-gray-200 mb-4">Other Work (Archive)</h2>
+                <p className="text-sm text-gray-400 mb-6">Games, cybersecurity, web and mobile projects previously built.</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                  {[
+                    ["BugsVsBunnies", "Level Designer", "https://nizitowns.itch.io/bugs-vs-bunnies-td"],
+                    ["RunesVsRobots", "Lead Game Designer", "https://chiferito.itch.io/project-tower"],
+                    ["License Master", "Team Leader/Designer", "https://mugwanezamanzi.itch.io/license-master"],
+                    ["NanoCore", "Team Leader/Game Designer", "https://xamsav.itch.io/nanocore-defense-protocol"],
+                    ["Ikinyoni Bird", "Game Developer", "https://mugwanezamanzi.itch.io/ikinyoni-bird"],
+                    ["Checker", "SOC Analyst", "https://github.com/MUGWANEZAMANZI/checker"],
+                    ["Agakurura Tracker", "Full Stack", "https://agakurura-production.up.railway.app/"],
+                    ["Mbaza AI", "Laravel + Rubix PHP", "https://github.com/MUGWANEZAMANZI"]
+                  ].map(([name, role, url], j) => (
+                    <div key={j} className="rounded-2xl border border-white/10 bg-slate-800/60 p-5">
+                      <h3 className="text-base font-semibold text-white">{name}</h3>
+                      <p className="text-xs text-gray-500 mt-1">{role}</p>
+                      <div className="mt-3">
+                        {url ? (
+                          <a
+                            href={url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-indigo-400 hover:text-indigo-300 text-sm"
+                          >
+                            View ↗
+                          </a>
+                        ) : (
+                          <span className="text-amber-400 text-sm">Coming Soon</span>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

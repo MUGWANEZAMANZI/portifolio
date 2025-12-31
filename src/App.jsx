@@ -1,6 +1,6 @@
 
 import './App.css'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Games from './pages/Games';
@@ -15,7 +15,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/games" element={<Games />} />
-          <Route path="/cyber" element={<Cyber />} />
+          <Route path="/certifications" element={<Cyber />} />
+          <Route path="/cyber" element={<Navigate to="/certifications" replace />} />
           <Route path='/web' element={<Web />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

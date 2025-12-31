@@ -1,25 +1,38 @@
 const webProjects = [
   {
-    title: 'Agakurura',
+    title: 'Mbaza',
     description:
-      'Agakurura is a tracking device that helps you monitor your belongings in real-time with live updates.',
-    url: 'https://agakurura-production.up.railway.app/',
+      'Live project site.',
+    url: 'https://mbaza.kwartisans.com/',
   },
   {
-    title: 'Abunzi AI Assistant',
+    title: 'Dorm Link',
     description:
-      'A legal AI system built with Rubix ML and Livewire to support local mediators (Abunzi) in resolving community disputes. It types responses in real-time and stores predictions for legal reference.',
-    url: 'https://abunzi-ai-assistant.vercel.app/',
+      'Live project site.',
+    url: 'https://dorm.kwartisans.com/',
+  },
+  {
+    title: 'Souriant',
+    description:
+      'Live project site.',
+    url: 'https://souriant.kwartisans.com/',
   },
 ];
 
 const mobileApps = [
   {
-    title: 'NutriTrack',
+    title: 'Dorm Link',
     description:
-      'NutriTrack is a mobile AI-powered nutrition assistant built with React Native. It helps users track meals, analyze food intake, and receive smart health recommendations.',
-    platform: 'React Native + AI',
-    storeUrl: '#', // Replace with actual store URL if available
+      'Find affordable dorms and hostels in Rwanda with maps and listings.',
+    platform: 'Android (Google Play)',
+    storeUrl: 'https://play.google.com/store/apps/details?id=com.kigaliwebartisans.dormlink',
+  },
+  {
+    title: 'Mbaza AI',
+    description:
+      'AI legal assistant providing guidance based on Rwandan laws and procedures.',
+    platform: 'Android (Google Play)',
+    storeUrl: 'https://play.google.com/store/apps/details?id=com.kigaliwebartisans.mbazaai',
   },
 ];
 
@@ -27,7 +40,7 @@ const Web = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-950 py-10 px-4">
       {/* Web Projects Section */}
-      <h1 className="text-4xl font-bold text-center text-indigo-600 mb-10">🌐 Web Projects</h1>
+      <h1 className="text-4xl font-bold text-center text-indigo-600 mb-10">Web Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {webProjects.map((project, index) => (
           <div
@@ -58,7 +71,7 @@ const Web = () => {
       </div>
 
       {/* Mobile Apps Section */}
-      <h1 className="text-4xl font-bold text-center text-green-600 mt-20 mb-10">📱 Mobile Apps</h1>
+      <h1 className="text-4xl font-bold text-center text-green-600 mt-20 mb-10">Mobile Apps</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {mobileApps.map((app, index) => (
           <div
